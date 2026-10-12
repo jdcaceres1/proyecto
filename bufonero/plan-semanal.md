@@ -6,9 +6,9 @@ Fuentes: Estrategia General 2026-2027 (docx), Manual Bufón v3.0, Narrative Arch
 
 1. **Hoy es 12 oct 2026 y el calendario original ya se atrasó.** El docx pone el arranque en julio. Lo comprimí: **Fase 1 = 4 semanas** en vez de 4 meses.
 2. **Elecciones: domingo 28 feb 2027** (el docx dice "30 febr", pero 28 es domingo). Quedan **20 semanas**.
-3. **No sé si ya hay videos publicados.** Si ya hay audiencia, salta la Fase 1 y pasa directo a la Fase 2.
+3. **Se arranca de cero** (confirmado): no hay audiencia, así que la Fase 1 completa es necesaria.
 4. **Sin pauta política pagada.** El docx es 100% orgánico, y TikTok prohíbe anuncios políticos.
-5. **No sé si el elenco es con actores reales o con IA.** Eso cambia las herramientas y el presupuesto, ver sección 3.
+5. **Personajes con IA (video realista) y voz con ElevenLabs** (confirmado). Ver sección 5.
 
 ## 1. Cuántos videos
 
@@ -114,3 +114,49 @@ No puse precios porque cambian seguido y no los verifiqué. Cuando tengas las 3 
 - **Veda electoral:** el docx solo prohíbe publicar el día de la elección; puede haber restricciones antes. Va al asesor legal.
 - **Financiamiento:** la Ley de Agentes Extranjeros grava con 30% el dinero extranjero. Antes de pagar herramientas o equipo, el asesor legal debe definir la estructura y de dónde sale el dinero.
 - **Datos duros:** 3 fuentes mínimas por dato (regla del manual), con el registro guardado.
+
+## 5. Ruta confirmada: video realista con IA + voz con ElevenLabs
+
+### 5.1 Riesgo nuevo: el realismo
+
+El plan original asumía personajes que se notan como parodia. Con video realista, personajes como Doña Arnulfa o Doña Luto (una madre/esposa de un detenido) pueden **confundirse con testimonios reales** si el clip circula sin contexto por WhatsApp, que es justo el canal que buscan. Eso daña la credibilidad y da argumentos a quien quiera acusar de desinformación. Medidas para el plan:
+
+- **Etiqueta de IA/parodia dentro del cuadro**, visible todo el clip (no solo en la descripción), y la etiqueta de contenido generado con IA en cada plataforma. Las plataformas piden marcar el video realista hecho con IA ([resumen de reglas, fuente secundaria](https://www.clipspeed.ai/blog/ai-generated-video-disclosure-rules.html)); confirma el texto exacto en las páginas oficiales de TikTok, Meta y YouTube.
+- **Estética deliberada de personaje**: encuadre, vestuario o iluminación algo estilizados, para que no parezca una grabación documental.
+- **Ninguna cara ni voz que se parezca a una persona real**, sobre todo políticos o funcionarios. Esto también te protege con las políticas de las herramientas.
+- Los personajes más sensibles (Doña Arnulfa, Doña Luto, CECOT) con más cuidado: sin elementos que parezcan documentales o noticias.
+
+### 5.2 Herramientas a cotizar
+
+Los precios de abajo vienen de blogs de terceros que **no coinciden entre sí**. Sirven solo para dimensionar; confirma en las páginas oficiales antes de pagar.
+
+| Función | Opciones a comparar | Lo que reportan las fuentes |
+|---|---|---|
+| Video IA | Veo 3.1, Kling, Seedance, Runway | Seedance suele ser lo más barato (~$0.03-0.14 por segundo, según el proveedor). Veo con audio, ~$0.20-0.75 por segundo según la fuente. Kling y Runway son más de suscripción (~$7 y ~$15/mes en el plan base). Veo sigue mejor las instrucciones complejas; Kling destaca en movimiento humano y sincronía labial; Seedance tiene flujo de referencias para mantener sujetos. Una fuente dice que Seedance no maneja caras humanas fotorrealistas tan bien como Veo ([comparativa](https://upsampler.com/blog/best-ai-video-generators-sora-veo-kling-runway-2026), [otra](https://rangy.ai/blog/ai-video-generators-compared-2026)) |
+| Voz | ElevenLabs (ya decidido) | Creator ~$22/mes y Pro ~$99/mes con licencia comercial; la gratuita no permite uso comercial. Los créditos varían según la fuente (Creator 100-121 mil, Pro 500-600 mil). Aprox. 1,000 créditos por minuto de voz ([resumen](https://gptprompts.ai/elevenlabs-pricing), [otro](https://bigvu.tv/blog/elevenlabs-pricing-2026-plans-credits-commercial-rights-api-costs/)) |
+| Sincronía labial | La de la herramienta de video, o una aparte | Probar si el acento y las pausas de 3 s (claptrap) se ven bien |
+| Imagen de personaje | Generador de imágenes con referencias | Para una "ficha" fija de cada personaje (30) |
+| Edición y subtítulos | Editor con subtítulos automáticos | Subtítulos obligatorios (regla 06) |
+| Sonido y música | Biblioteca con licencia comercial | |
+
+**Prueba antes de comprar:** genera el monólogo de Don Lucho (30-40 s) en las 3 mejores opciones de video y evalúa: consistencia de la cara entre tomas, sincronía labial con la voz de ElevenLabs, cuántos intentos hacen falta por clip bueno y si la herramienta acepta el guion sin bloquear por tema político.
+
+### 5.3 Dimensionamiento de costos (orden de magnitud)
+
+Supuestos: 101 piezas de ~45 s = ~4,500 s de video final; con ~4 intentos por clip bueno se generan ~18,000 s.
+
+| Concepto | Cálculo | Rango estimado |
+|---|---|---|
+| Video IA | 18,000 s × $0.03-0.14 (Seedance) | ~$550-2,500 |
+| Video IA | 18,000 s × $0.20-0.75 (Veo con audio) | ~$3,600-13,500 |
+| Voz ElevenLabs | ~76 min finales × 3 intentos ≈ 230 mil créditos; Creator a Pro por 5 meses | ~$110-500 |
+| Resto (edición, música, almacenamiento, programación) | Por cotizar | |
+| Asesor legal | Por cotizar, **prioridad** | |
+
+La diferencia grande depende del modelo de video. Con la prueba de arriba puedes ver si compensa pagar más por menos intentos.
+
+### 5.4 Ajuste operativo al calendario
+
+- Los primeros 5-6 videos de la Semana 1 conviene tenerlos **ya generados y aprobados antes del 12 de octubre** (de cero, no hay banco). Si no, la S1 se corre una semana.
+- Generar por lotes semanales (los lunes) y dejar un buffer de 1 semana de piezas listas.
+- Una persona responsable de revisar que cada pieza cumpla las 8 reglas de oro antes de publicar.
